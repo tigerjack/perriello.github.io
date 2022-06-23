@@ -22,8 +22,11 @@ social: true  # includes social icons at the bottom of the page
 Ph.D. candidate @ [Department of Electronics, Information and Bioengineering (DEIB)](https://www.deib.polimi.it) – [Politecnico di Milano](https://www.polimi.it).
 Part of the [quantum computing initiative](https://www.quantum.polimi.it).
 
-My research, carried out at Politecnico di Milano university, revolves around the quantum computing field.
-At the moment, I am focusing on the design, development and cryptanalysis of quantum algorithms to attack Post-Quantum Cryptosystems, with a specific focus on code-based finalists of [NIST competition](https://csrc.nist.gov/projects/post-quantum-cryptography).
+My research, carried out at Politecnico di Milano university, revolves around
+the quantum computing field. At the moment, I am focusing on the design,
+development and cryptanalysis of quantum algorithms to attack Post-Quantum
+Cryptosystems, with a specific focus on the code-based finalists of [NIST
+competition](https://csrc.nist.gov/projects/post-quantum-cryptography).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 

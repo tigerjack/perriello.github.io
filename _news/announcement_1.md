@@ -1,7 +1,12 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+date: 2021-07-25 15:59:00+0100
+title: Paper accepted at EAI SecureComm!
+inline: false
 ---
 
-A simple inline announcement.
+***
+
+We presented the first quantum circuit to accelerate the Information Set
+Decoding problem, adapting Grover's framework to the Lee-Brickell variant.
+The proposal is based on an hybrid classical-quantum algorithm.

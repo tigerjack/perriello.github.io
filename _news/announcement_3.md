@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2021-07-31 19:11:00+0100
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Another paper accepted at IEEE International Conference on Quantum Computing and Engineering (QCE)  :sparkles: :smile:

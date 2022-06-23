@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Architettura dei Calcolatori e Sistemi Operativi
+description: Parallel programming and Linux Operating System. Lecturer G. Pelosi
 importance: 1
-category: work
+category: teaching assistant
 ---
 
 Every project has a beautiful feature showcase page.
@@ -68,7 +67,7 @@ Here's the code for the last row of images above:
 
 {% raw %}
 ```html
-<div class="row justify-content-sm-center">
+    <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
