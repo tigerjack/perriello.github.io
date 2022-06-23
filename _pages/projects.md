@@ -4,7 +4,7 @@ title: teaching
 permalink: /teaching/
 description: A growing collection of your cool projects.
 nav: true
-nav_order: 1
+nav_order: 3
 display_categories: [teaching assistant, tutor]
 horizontal: false
 ---
