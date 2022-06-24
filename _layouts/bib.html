@@ -84,7 +84,10 @@
           {%- if entry.year -%}
             {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
           {%- endif -%}
-          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+          {% if entry.doi %}
+          <a href="{{ entry.doi | prepend: 'http://doi.org/' }}">Doi: {{ entry.doi }}</a>
+          {% endif %}
+          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{{ entryurl }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>

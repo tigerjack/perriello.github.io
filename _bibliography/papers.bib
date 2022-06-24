@@ -14,6 +14,31 @@
   timestamp = {Tue, 30 Nov 2021 17:31:17 +0100},
   selected={true},
   bibtex_show = {true},
+  abstract = {Providing strong security margins ag ainst cryptanalytic attackers
+                  equipped with quantum computers is a major research direction
+                  fostered by the US National Institute of Standards and
+                  Technology (NIST) Post-quantum Cryptography Standardization
+                  process. Among the viable candidates, code-based asymmetric
+                  cryptosystems are one of the prominent approaches. In this
+                  work, we propose the first fully detailed quantum circuit to
+                  compute the solution to the Information Set Decoding problem,
+                  the main cryptanalytic tool against such cryptosystems. We
+                  evaluate the cryptanalytic effort with our circuit design on
+                  actual parameters from cryptosystems admitted to the final
+                  stage of the NIST standardization process and compare it with
+                  the previous conservative asymptotic estimates. We show that
+                  the actual computational effort of our solution is smaller
+                  than the one estimated via asymptotics by a factor of 2 4 . We
+                  also perform a comparison of our results with the
+                  quantum-computational effort of breaking the AES cipher,
+                  following the guidelines of the US NIST in evaluating the
+                  security of the ciphers. To do this, we translate our design
+                  on gates of the Clifford+T gate set only, one of the most
+                  promising candidate for fault-tolerant quantum computation,
+                  and report that the parameter choices for Classic McEliece and
+                  BIKE, two candidates admitted to the final round of the NIST
+                  standardization process provide an adequate security margin
+                  with respect to our ISD solution technique.},
 }
 
 @inproceedings{DBLP:conf/securecomm/PerrielloBP21,
@@ -31,5 +56,25 @@
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl = {https://dblp.org/rec/conf/securecomm/PerrielloBP21.bib},
   timestamp = {Wed, 15 Dec 2021 10:32:56 +0100},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  abstract = {The significant interest in cryptographic primitives providing
+                  sound security margins when facing attacks with quantum
+                  computers is witnessed by the ongoing USA National Institute
+                  of Standards and Technology Post-quantum Cryptography
+                  Standardization process. Sound and precise evaluation of the
+                  amount of computation required to break such cryptographic
+                  primitives by means of quantum computers is required to be
+                  able to choose the cryptosystem parameters. We present a full
+                  description of a quantum circuit to accelerate the computation
+                  of the solution of the Information Set Decoding problem ,
+                  which is currently the best known non-structural attack
+                  against code-based cryptosystems. We validate our design
+                  running it on small instances of error correction codes, which
+                  allowed a complete validation on the AtoS QLM quantum computer
+                  simulator. We detail the circuit accelerating the exponential
+                  complexity search phase in the Lee and Brickell variant of the
+                  ISD solver, and provide its computational complexity for
+                  cryptographically relevant parameters taken from the third
+                  round candidates in the USA post-quantum standardization
+                  process.}
 }
