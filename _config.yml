@@ -22,12 +22,12 @@ icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name
 
 # POLIMI
 # If you are deploying your webpage to your-domain.com/your-project/, you must set url: your-domain.com and baseurl: /your-project/. If you are deploing directly to your-domain.com, leave baseurl blank.
-# url: https://perriello.faculty.polimi.it
-# baseurl: 
+url: https://perriello.faculty.polimi.it
+baseurl: 
 
 # GITHUB
-url: https://tigerjack.github.io # the base hostname & protocol for your site
-baseurl: 
+# url: https://tigerjack.github.io # the base hostname & protocol for your site
+# baseurl: 
 
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
