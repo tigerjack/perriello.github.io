@@ -28,8 +28,9 @@ development and cryptanalysis of quantum algorithms to attack Post-Quantum
 Cryptosystems, with a specific focus on the code-based finalists of [NIST
 competition](https://csrc.nist.gov/projects/post-quantum-cryptography).
 
-In my spare time, I like to play the ukulele, my loyal travelling companionm and
-dancing, with swing being the favorite genre. I also love [watching
-movies](https://letterboxd.com/tigerjack/), [listening to
+In my spare time, I like to play the ukulele, my loyal travelling companion.
+Lately, I also discovered a passion for dance, with swing being my favorite
+genre. I also love [watching movies](https://letterboxd.com/tigerjack/),
+[listening to
 music](https://open.spotify.com/playlist/4aWxDlzZuOynhmmmXOHhDv?si=6192591721624709)
 and [reading good books](https://www.goodreads.com/user/show/117405756-simone).
