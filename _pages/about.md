@@ -34,3 +34,8 @@ genre. I also love [watching movies](https://letterboxd.com/tigerjack/),
 [listening to
 music](https://open.spotify.com/playlist/4aWxDlzZuOynhmmmXOHhDv?si=6192591721624709)
 and [reading good books](https://www.goodreads.com/user/show/117405756-simone).
+
+
+<h3 id="gpg-key">Contacts</h3>
+You can find all my contacts and social handles at the bottom of the page. 
+If you ever find yourself in urgent need of my GPG key, [here it is](./assets/txt/AA33E72A09C451744F81270A12550F63A66F27B7.asc) for quick access.
