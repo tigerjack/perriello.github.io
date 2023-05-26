@@ -46,4 +46,5 @@ jobs:
         ftp_folder: ${{ secrets.FTP_FOLDER }} 
       run: |
         lftp -u "$ftp_username","$ftp_password" -p "$ftp_port" -e "mirror --parallel=100 -R _site/ $ftp_folder" "$ftp_hostname"
+        lftp -c "set ssl:verify-certificate no; open -u $ftp_username,$ftp_password -p $ftp_port $ftp_location; mirror -Rnev ./_site/ "$ftp_folder" --ignore-time --parallel=100 --exclude-glob .git* --exclude .git/ --no-perms"
 
