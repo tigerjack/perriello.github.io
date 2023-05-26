@@ -33,7 +33,7 @@ jobs:
         npm install -g mermaid.cli
         sudo apt-get install -y lftp
     - name: 🛠️ Configure LFTP
-        run: mkdir ~/.lftp && echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
+      run: mkdir ~/.lftp && echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
     - name: Build Site with Jekyll.
       run: JEKYLL_ENV=production bundle exec jekyll build
     # Looks kind of complicated but just uploads the content of _site folder to the ftp server. It does not upload the _site folder itself.
