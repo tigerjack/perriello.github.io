@@ -1,31 +1,47 @@
-on: 
+name: deploy
+
+on:
   push:
     branches:
-      - "polimi"
-name: 🚀 Deploy website on push on polimi branch
+      - polimi
+  pull_request:
+    branches:
+      - polimi
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-ruby@v1
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0.2'
-    # Install the gems in the gemfile & install ncftp
-    - name: Setup Environment.
+    - name: Enable bundler cache
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Install deps
       run: |
-        bundle install
+        gem install bundler
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+        npm install -g mermaid.cli
         sudo apt-get install -y ncftp
-    
     # Build the site
     - name: Build Site with Jekyll.
       run: JEKYLL_ENV=production bundle exec jekyll build
-    
     # Looks kind of complicated but just uploads the content of _site folder to the ftp server. It does not upload the _site folder itself.
     - name: Upload site to FTP.
       env: 
         ftp_location: ${{ secrets.FTP_LOCATION }} # Pass in required secrets.
         ftp_username: ${{ secrets.FTP_USERNAME }}
         ftp_password: ${{ secrets.FTP_PASSWORD }} 
+        # ftp_folder: $ # /public_html
       run: |
         ncftpput -R -v -u "$ftp_username" -p "$ftp_password" -P 2121 $ftp_location / _site/* 
+
