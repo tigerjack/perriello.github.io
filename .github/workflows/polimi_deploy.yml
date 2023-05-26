@@ -40,7 +40,7 @@ jobs:
     - name: Upload site to FTP.
       env: 
         ftp_location: ${{ secrets.FTP_LOCATION }} # Pass in required secrets.
-        ftp_port: ${{ secrets.FTP_FOLDER }} 
+        ftp_port: ${{ secrets.FTP_PORT }} 
         ftp_username: ${{ secrets.FTP_USERNAME }}
         ftp_password: ${{ secrets.FTP_PASSWORD }} 
         ftp_folder: ${{ secrets.FTP_FOLDER }} 
