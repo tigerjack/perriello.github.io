@@ -22,6 +22,10 @@ nav_order: 4
     </thead>
     <tbody>
         <tr>
+            <td>Source code for paper <a href="https://doi.org/10.1145/3607256">Improving the Efficiency of Quantum Circuits for Information Set Decoding</a></td>
+            <td><a href="https://github.com/paper-codes/2023-TQuantum" target="_blank" rel="noopener noreferrer">github</a></td>
+        </tr>
+        <tr>
             <td>A set of useful extensions for Atos qat language (QLM/myQLM) used for quantum simulation</td>
             <td><a href="https://github.com/tigerjack/qat-utils" target="_blank" rel="noopener noreferrer">github</a></td>
         </tr>
